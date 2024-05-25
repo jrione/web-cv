@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+ /*   NAVBARRRR  */
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.navbar {
+    background: #1f4c5f;
+    color: #fff;
+    padding: .2rem 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar-links a:hover{
+    color: #333;
+    background-color: #1dbb87;
+    border-radius: 5px;
+}
+
+.navbar-links a:active{
+    background-color: #077c5b;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        padding: 10px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* untuk body kebawah */
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inner-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 2% 2%;
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 5px #888888;
+}
+
+p{
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.info {
+    padding:50px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.with-style{
+    list-style-type: disc !important;
+}
+
+ul li{
+    margin: 10px 0;
+}
+
+i{
+    width: 20px;
+}
+
+.ul-li-none{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.i-none{
+    width: auto !important;
+}
+
+.inner-column {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+}
+
+.inner-column h2{
+    margin: 0;
+}
+
+.inner-row{
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inner-row h1{
+    margin: 0;
+}
+
+.inner-row h3{
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .inner-content {
+        flex-direction: column;
+    }
+    .column {
+        margin: 10px 0;
+    }
+    
+    .inner-column {
+        margin: 10px 0;
+    }
+    
+    .with-style{
+        list-style-type: none !important;
+    }
+
+    .info{
+        padding: 0 0 ;
+    }
+
+    ul{
+        padding: 0 0;
+    }
+}
+
+.profile-img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0;
+    border: 1px solid #801919;
+    border-radius: 50%;
+    box-shadow: 2px 3px #888888;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* DONE */
+
+.imgcert{
+    display: block;
+    border: 1px solid #801919;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container-img {
+    position: relative;
+    width: 100%;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 5px;
+}
+
+.container-img:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {	
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sirkel-centering{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sirkel {
+    line-height: 160px;
+    width: 160px;
+    background-color: #20777b;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+}
+
+.inner-sirkel{
+    line-height: 140px;
+    width: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+}
